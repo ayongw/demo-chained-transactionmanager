@@ -7,15 +7,15 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:/spring-context.xml")
-public class ServiceTest {
+@ContextConfiguration(locations = "classpath:/spring-hibernate-context.xml")
+public class HibernateServiceTest {
 
 	@Autowired
-	TestService testService;
+	HibernateService service;
 	
 	@Test
 	public void test() {
-		testService.test();
+		service.test();
 	}
 	
 }

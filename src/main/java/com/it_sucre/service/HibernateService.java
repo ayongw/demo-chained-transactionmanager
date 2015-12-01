@@ -5,18 +5,19 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.it_sucre.dao.TestDao;
+import com.it_sucre.dao.HibernateDao;
 
 @Service
-public class TestService {
+public class HibernateService {
 
 	@Autowired
-	TestDao testDao;
-
-	@Transactional(rollbackFor = Exception.class, propagation = Propagation.REQUIRED)
+	HibernateDao hibernateDao;
+	
+	@Transactional(value = "transactionManager",propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
 	public void test() {
-//		testDao.test2();
-		testDao.test();
+		hibernateDao.test();
+		hibernateDao.test2();
 	}
-
+	
+	
 }

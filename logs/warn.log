@@ -1,0 +1,2 @@
+[WARN ] 2015-12-01 15:12:42,972(2432) org.hibernate.internal.SessionFactoryImpl.buildCurrentSessionContext(SessionFactoryImpl.java:1535) –> [main] HHH000008: JTASessionContext being used with JDBCTransactionFactory; auto-flush will not operate correctly with getCurrentSession()  
+[WARN ] 2015-12-01 15:12:43,847(3307) org.hibernate.internal.SessionFactoryImpl.buildCurrentSessionContext(SessionFactoryImpl.java:1535) –> [main] HHH000008: JTASessionContext being used with JDBCTransactionFactory; auto-flush will not operate correctly with getCurrentSession()  
